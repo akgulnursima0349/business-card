@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Projemiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>EduTech AI</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#project">Projemiz</a></li>
+                    <li><a href="#team">Ekibimiz</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/slide1.jpg" alt="Eğitim Teknolojileri" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjNjM2NkYxIi8+Cjx0ZXh0IHg9IjYwMCIgeT0iMzAwIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkXEn2l0aW0gVGVrbm9sb2ppbGVyaTwvdGV4dD4KPC9zdmc+'">
+                <div class="slide-content">
+                    <h2>Eğitimde Yapay Zeka Devrimi</h2>
+                    <p>Öğrencilerin öğrenme deneyimini dönüştüren yenilikçi çözümler</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="İnteraktif Öğrenme" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjMTA5OTZCIi8+Cjx0ZXh0IHg9IjYwMCIgeT0iMzAwIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPsSwbnRlcmFrdGlmIMOWxJ9yZW5tZTwvdGV4dD4KPC9zdmc+'">
+                <div class="slide-content">
+                    <h2>İnteraktif Öğrenme Deneyimi</h2>
+                    <p>Simülasyonlarla fen bilgisi artık daha eğlenceli ve anlaşılır</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="AI Chatbot" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjRjU5RTBCIU8KLz4KPHRleHQgeD0iNjAwIiB5PSIzMDAiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjI0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QUkgQ2hhdGJvdDwvdGV4dD4KPC9zdmc+'">
+                <div class="slide-content">
+                    <h2>AI Destekli Öğrenme Asistanı</h2>
+                    <p>7/24 öğrenci sorularını yanıtlayan akıllı chatbot sistemi</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn" onclick="changeSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="project-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projemiz</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="project-content">
+                <p>Bu proje, ortaokul öğrencilerinin fen bilgisi derslerini daha eğlenceli ve anlaşılır hale getirmek için geliştirildi. Öğrenciler etkileşimli deney simülasyonlarıyla konuları uygulamalı olarak öğrenirken, özel olarak eğittiğimiz yapay zekâ destekli chatbot sayesinde sorularına anında cevap alabiliyor. Öğretmenler de sınıf yönetimi ve öğrenci ilerleme takibi için özel arayüzü kullanabiliyor.</p>
+                
+                <div class="project-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>İnteraktif Simülasyonlar</h3>
+                        <p>Fen bilgisi konularını deneyimleyerek öğrenme</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Chatbot</h3>
+                        <p>7/24 öğrenci sorularını yanıtlayan akıllı asistan</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>İlerleme Takibi</h3>
+                        <p>Öğretmenler için gelişmiş analiz araçları</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ekibimiz</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="team-grid">
+                <!-- 1. Ekip Üyesi: Ayşe Nur Yıldırım -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="team/member1.jpg" alt="Ayşe Nur Yıldırım" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTEwMCAxODBDMTAwIDE2NS44NTggMTEyLjY4NiAxNTQgMTI4IDE1NEgxNzJDMTg3LjMxNCAxNTQgMjAwIDE2NS44NTggMjAwIDE4MFYyMDBIMTAwVjE4MFoiIGZpbGw9IiM5Q0EzQUYiLz4KPC9zdmc+'">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ayşe Nur Yıldırım</h3>
+                        <p class="member-role">Fen Bilimleri Öğretmeni</p>
+                        <p class="member-description">Fen Bilimleri öğretmeni ve Fen Eğitimi yüksek lisans öğrencisi. Öğretim stratejileri ve yapay zekâ entegrasyonu üzerine odaklanarak, eğitimde yenilikçi uygulamaların gelişimine katkı sağlamaktadır.</p>
+                        <a href="cv/cv1.pdf" class="cv-btn" download>
+                            <i class="fas fa-download"></i>
+                            CV İndir
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 2. Ekip Üyesi: Sait Güngörmez -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="team/member2.jpg" alt="Sait Güngörmez" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiM2MzY2RjEiLz4KPHBhdGggZD0iTTEwMCAxODBDMTAwIDE2NS44NTggMTEyLjY4NiAxNTQgMTI4IDE1NEgxNzJDMTg3LjMxNCAxNTQgMjAwIDE2NS44NTggMjAwIDE4MFYyMDBIMTAwVjE4MFoiIGZpbGw9IiM2MzY2RjEiLz4KPC9zdmc+'">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sait Güngörmez</h3>
+                        <p class="member-role">Fen Bilimleri Öğretmeni</p>
+                        <p class="member-description">Fen Bilimleri öğretmeni ve fen eğitimi alanında yüksek lisans yapan deneyimli eğitimci. TÜBİTAK projelerinde aktif rol alarak araştırma ve proje geliştirme deneyimi kazanmıştır.</p>
+                        <a href="cv/cv2.pdf" class="cv-btn" download>
+                            <i class="fas fa-download"></i>
+                            CV İndir
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 3. Ekip Üyesi: Nur Sima Akgül -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="team/member3.jpg" alt="Nur Sima Akgül" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiMxMDk5NkIiLz4KPHBhdGggZD0iTTEwMCAxODBDMTAwIDE2NS44NTggMTEyLjY4NiAxNTQgMTI4IDE1NEgxNzJDMTg3LjMxNCAxNTQgMjAwIDE2NS44NTggMjAwIDE4MFYyMDBIMTAwVjE4MFoiIGZpbGw9IiMxMDk5NkIiLz4KPC9zdmc+'">
+                    </div>
+                    <div class="member-info">
+                        <h3>Nur Sima Akgül</h3>
+                        <p class="member-role">Bilgisayar Mühendisi</p>
+                        <p class="member-description">Bilgisayar mühendisliği öğrencisi olarak yazılım geliştirme ve yapay zeka alanlarında uzmanlaşmakta. Backend geliştirme, makine öğrenmesi ve veri madenciliği konularında projeler geliştirmektedir.</p>
+                        <a href="cv/cv3.pdf" class="cv-btn" download>
+                            <i class="fas fa-download"></i>
+                            CV İndir
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduTech AI</h3>
+                    <p>Eğitimde yapay zeka ile geleceği şekillendiriyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <p>Email: info@edutech-ai.com</p>
+                    <p>Tel: +90 (xxx) xxx xx xx</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sosyal Medya</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduTech AI. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
